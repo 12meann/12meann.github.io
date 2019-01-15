@@ -1,0 +1,39 @@
+#projects {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 50px;
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $sec-color;
+      @include easeOut;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $sec-color;
+    color: $main-color;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: $sec-color;
+  color: #333;
+}

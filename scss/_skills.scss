@@ -1,0 +1,46 @@
+#skills {
+  .container-skills {
+    display: grid;
+    grid-template-columns: "1fr 1fr 1fr";
+    grid-gap: 20px;
+    grid-template-areas: "c1 c2 c3" "c4 c5 c6";
+    .box {
+      .chart {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 180px;
+      }
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .c1 {
+        grid-area: "c1";
+      }
+      .c2 {
+        grid-area: "c2";
+      }
+      .c3 {
+        grid-area: "c3";
+      }
+      .c4 {
+        grid-area: "c4";
+      }
+      .c5 {
+        grid-area: "c5";
+      }
+      .c6 {
+        grid-area: "c6";
+      }
+      h3 {
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

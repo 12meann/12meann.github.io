@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+
+@import "config";
+@import "about";
+@import "skills";
+@import "projects";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $main-color;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/laptop.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+ul li a {
+  list-style-type: none;
+}
+p {
+  font-size: 1.15rem;
+}
+
+.section-title {
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    margin-top: 200px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    span {
+      color: $sec-color;
+    }
+  }
+}
+
+// landing page
+.landing {
+  margin-left: 20px;
+  letter-spacing: 0.08rem;
+}
+
+#name {
+  margin-top: 50vh;
+  font-size: 3.8rem;
+  font-weight: 600;
+  span {
+    color: $sec-color;
+  }
+}
+#sub {
+  font-size: 1.5rem;
+  span {
+    color: $sec-color;
+  }
+}
+.icons {
+  li {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 3px;
+    a {
+      color: inherit;
+      font-size: 2.5rem;
+      .fab {
+        color: white;
+        &:hover {
+          color: $hover-color;
+          @include easeOut;
+        }
+      }
+    }
+  }
+}
+
+#brand img {
+  width: 50px;
+}
+button {
+  padding: 10px;
+  border: 1px red solid;
+  border-radius: 10px;
+  outline: none;
+  background: red;
+  color: white;
+  &:hover {
+    background: $hover-color;
+    color: #333;
+    cursor: pointer;
+    border: red;
+    @include easeOut;
+  }
+}
+.fas {
+  display: inline-block;
+  color: red;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 2rem;
+  margin-bottom: 150px;
+  &:hover {
+    color: $hover-color;
+    @include easeOut;
+  }
+}
+.arrow-down span {
+  font-size: 0.8rem;
+  padding: 10px;
+  color: #ffffff; /* Fallback for older browsers */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+// nav bar sticky
+
+.container {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 80px;
+}
+
+.sticky {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+#brand {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.links {
+  float: right;
+  margin-right: 60px;
+  li {
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    a:hover {
+      color: $hover-color;
+      border-bottom: 3px $hover-color solid;
+      padding-bottom: 27px;
+      @include easeOut;
+    }
+  }
+}

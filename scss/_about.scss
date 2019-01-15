@@ -1,0 +1,100 @@
+.bio-pic {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 20px;
+  grid-template-areas: "pic bio";
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 20px;
+  p {
+    letter-spacing: 0.15rem;
+    line-height: 30px;
+  }
+  .pic {
+    grid-area: "pic";
+    img {
+      margin: 150px 70px 40px 70px;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+  .bio {
+    grid-area: "bio";
+    word-wrap: break-word;
+    margin-right: 50px;
+    h4 {
+      font-size: 2rem;
+      padding-top: 100px;
+      span {
+        color: $sec-color;
+      }
+    }
+    p:last-child {
+      border-left: yellow 4px solid;
+      padding-left: 20px;
+    }
+  }
+}
+strong {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.work-title {
+  text-align: center;
+  margin: 200px 300px 10px 300px;
+  letter-spacing: 0.25rem;
+  h2 {
+    font-size: 2rem;
+    span {
+      color: $sec-color;
+    }
+  }
+  p {
+    letter-spacing: 0.15rem;
+
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-template-areas: "first second third";
+  margin: 50px;
+  .first {
+    grid-area: "first";
+  }
+  .second {
+    grid-area: "second";
+  }
+  .third {
+    grid-area: "third";
+  }
+  .job {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-top: yellow 4px solid;
+    letter-spacing: 0.15rem;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 0 100px;
+  }
+  .title {
+    text-align: center;
+    font-size: 1.15rem;
+  }
+  .job p {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .job .description {
+    font-size: 0.8rem;
+  }
+}
