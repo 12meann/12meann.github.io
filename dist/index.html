@@ -16,7 +16,7 @@
   <body>
     <div id="bg-img">    
       <!-- landing page -->
-        <div class="landing">
+        <section id="landing">
           <h1 id="name">Mary Anne Kristina <span>Urgel</span> </h1>
           <h3 id="sub">
             Virtual Assistance <span> || </span>  Web Developer <span> || </span> WordPress
@@ -32,12 +32,12 @@
               <i class="fab fa-github-square"></i></a>
             </li>
           </ul>
-          <!-- <button>Work with me</button> -->
+         
           <div class="arrow-down">
-            <a href="#brand"><i class="fas fa-angle-down"></i></a><span>Scroll down</span> 
+            <a href="#brand"><i class="fas fa-angle-down"></i></a><span class="gray">Scroll down</span> 
           </div>
          
-        </div>
+        </section>
 
       <!-- header -->
     
@@ -48,7 +48,7 @@
                 <ul class="links">
                   <li><a href="#about">About</a></li>
                   <li><a href="#skills">Skills</a></li>
-                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#my-project">Projects</a></li>
                   <li><a href="#contact">Contact Me</a></li>
                 </ul>
               
@@ -56,7 +56,7 @@
           </div>
 
       <!-- About -->
-      <div id="about">
+      <section id="about">
         <div class="bio-pic">
           <div class="pic">
               <img src="img/me ann pic round.jpg" alt="me-ann">
@@ -71,11 +71,12 @@
             <p>I'm a <strong> self-taught Web developer </strong> (even saying this give me goosebumps, but yes I am!). Nowadays, everything you need to learn is out on the internet. You just need to have a good researching skill and the determination to get what you needed to learn. It all started when I saw an online course about learning <strong>Photoshop, Web Designing and Freelancing </strong> . I then study Web Development. I have a certificate in Web Developer Bootcamp from Udemy with Mr. Colt Steele as my Instructor. It is a 46.5-hour online course about front to back end development. I learned about <strong> HTML, CSS, Bootstrap 3 and 4, Javascript (ES6), MEN Stack (Mongo DB, Express JS, Node JS),</strong> and we also build a full-functioning website which covered everything and more from what we learned. I included it in  my sample work (YelpCamp). I still have a long way to go. I keep on studying new techniques to build up what I know now. I look for other online tutorials and resources to supplement the information I have. I believe life is a series of unending courses that's why we have to keep on learning to satisfy our complicated brains. </p>
             
           </div>
-        </div>
+        </section>
         <!-- Skills -->
-        <div id="skills">
+        <section id="skills">
           <div class="section-title">
-              <h2>My <span> Skills</span></h2>
+            <h2 class="skill-h2">My <span> Skills</span></h2>
+             <p class="skills-p">(Refresh the page to see some animation!)</p> 
           </div>
           
         <div class="container-skills">
@@ -101,30 +102,34 @@
               <h3>Photoshop</h3>
           </div>
           <div class="box">
-              <div class="chart c6" data-percent="70" data-scale-color="#ffb400">70%</div>
+              <div class="chart c6" data-percent="60" data-scale-color="#ffb400">60%</div>
               <h3>Javascript</h3>
           </div>
 
         </div>
               
           
-      </div>
+      </section>
         <!-- Work experiences -->
        
-        <div class="work-title">
+        <section id="work">
           <h2>Work <span>Experiences</span> </h2>
-          <p>Although these list are not related to the career I'm prospecting, I believe these work experiences help me build up who I am and what I can do today. </p>
-        </div>
+          <p class="work-desc">Although this list are not related to the career I'm prospecting, I believe these work experiences help me build up who I am and what I can do today. </p>
+        
         
         <div class="work">
           <div class="job first">         
               <img src="img/transcription.png" alt="transcription">           
-              <h4 class="title">Freelance Transcriber </h4><p>QA World</p> 
+              <h4 class="title">Freelance Transcriber </h4>
+              <p>QA World</p> 
+              <hr>
               <p class="description">Producing high-quality call transcripts that are clean, readable, and properly structured. </p>         
           </div>
           <div class="job second">         
               <img src="img/headphone.png" alt="customer service">           
-              <h4 class="title">Customer Service Representative </h4> <p>Hinduja Global Solutions, Inc.</p>
+              <h4 class="title">Customer Service Representative </h4> 
+              <p>Hinduja Global Solutions, Inc.</p>
+              <hr>
               <p class="description">Responsible for answering customer’s inquiries about the 
                   products and services offered by one of the largest 
                   telecommunication in the US and offering additional products to 
@@ -132,88 +137,130 @@
           </div>
           <div class="job third">         
               <img src="img/ship.png" alt="cruise ship">           
-              <h4 class="title">Assistant Cook</h4> <p>Norwegian Cruise Line, ltd.</p>
+              <h4 class="title">Assistant Cook</h4> 
+              <p>Norwegian Cruise Line, ltd.</p>
+              <hr>
               <p class="description">I am responsible for delivering products to the highest quality in
                   terms of freshness, taste, and consistency, with strict adherence
                   to USPH/FDA guidelines. I am also responsible for batch, a la minute, and line cooking techniques.</p>
           </div>
-      </div>
-      
+        </div>
+      </section>
       <!-- Projects -->
+      <section id="my-project">
+
+      
       <div class="section-title">
         <h2>My <span>Projects</span> </h2>
       </div>
       <div id="projects">
-          <div class="item">
+          <div class="item-1 item">
             <a href="https://yelpcamp-meann.herokuapp.com/">
               <img src="img/kdrama.png" alt="yelpcamp-meann">
-            </a>
-            <a href="#" class="btn-light">
-              <i class="fas fa-eye"></i> YelpCamp
             </a>
             <a href="https://github.com/12meann/yelpcamp" class="btn-dark">
               <i class="fab fa-github"></i> Github
             </a>
+            <div class="desc">
+              <h3> YelpCamp</h3>
+              <p class="truncate">The final project that we made in the Web Developer Bootcamp. Feel free to play around with it. You can use a dummy account to login, add campground pictues and comment on other campgrounds. We made this using HTML, CSS, Bootstrap4, Javascript, Mongo DB, Express JS, Node JS (for back-end). 
+                
+            </div>
+            
           </div>
 
-          <div class="item">
+          <div class="item-2 item">
             <a href="https://online-scoreboard.herokuapp.com/">
               <img src="img/kdrama.png" alt="Online Scoreboard">
             </a>
-            <a href="#" class="btn-light">
-              <i class="fas fa-eye"></i> Online Scoreboard
-            </a>
+            
             <a href="https://github.com/12meann/online-scoreboard" class="btn-dark">
               <i class="fab fa-github"></i> Github
             </a>
+            <div class="desc">
+              <h3> Online Scoreboard</h3>
+              <p>One of the many projects from webdevbootcamp course.
+                It is a simple scoreboard that will keep track of 2 player's scores.                
+                I added some functionality in the app like user can modify player 1 and 2's name by clicking on cutomize and typing their desired name and changing themes by choosing from the themes section. I made this using HTML, CSS and Javascript. </p>
+            </div>
           </div>
 
-          <div class="item">
+          <div class="item-3 item">
             <a href="https://mykdramaaddiction1.wordpress.com/">
-              <img src="img/kdrama.png" alt="My Kdrama Addiction">
+              <img src="img/Me-ann.png" alt="My Kdrama Addiction">
             </a>
-            <a href="#" class="btn-light">
-              <i class="fas fa-eye"></i> Blog
-            </a>
+            
             <a href="#" class="btn-dark">
                WordPress
             </a>
+            <div class="desc">
+              <h3> Blog</h3>
+              <p>Blogging one of my hobbies, watching Kdrama. My Kdrama Addiction is a blog about reviews and recommendation of Korean TV series and movies. I made this using WordPress.com.</p>
+            </div>
           </div>
 
-          <div class="item">
+          <div class="item-4 item">
             <a href="#!">
               <img src="img/kdrama.png" alt="">
             </a>
-            <a href="#" class="btn-light">
-              <i class="fas fa-eye"></i> Project 4
-            </a>
+            
             <a href="#" class="btn-dark">
               <i class="fab fa-github"></i> Github
             </a>
+            <div class="desc">
+              <h3> what?</h3>
+              <p>Description</p>
+            </div>
           </div>
       </div>
+    </section>
       <!-- Contact me -->
 
-    <div id="contact">
-      <p> Are you interested in the skills that I can provide for you? Are you a professional who's in need of a portfolio website or are you a business owner who needs a company website? Let's start Working together. </p>
-      <p>
-      Feel free to reach out. Here's my contact info. Just send me a message to any of these platforms and I'll be right back with you as soon as possible.</p>
-      <ul>
-        <li>Location: Quezon City, Philippines</li>
-        <li>Email : 12meann@gmail.com</li>
-        <li>Skype: me.ann12</li>
-        <li>Linked In: <a href="https://www.linkedin.com/in/mary-anne-kristina-urgel/"></a>Let's get connected</a> and send me a message</a></li>
-      </ul>
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact <span>me</span></h2>
+      </div>  
+      <div class="c12">
+          <div class="c1">
+              <p class="contact"> Are you interested in the skills that I can provide for you? 
+                <br>
+                <br>
+                Are you a professional who's in need of a <strong> portfolio website </strong> or are you a business owner who needs a <strong> company website</strong>? 
+              </p>
+              <br>
+              <p class="contact">
+                  <span> Let's start Working together </span>. Feel free to reach out. Here's my contact info. 
+                  <br>
+                  <br>
+                  Just send me a message to any of these platforms and I'll be right back with you as soon as possible.
+              </p>
+            </div>
+            <div class="c2">
+              <ul>
+                <li> Location: Quezon City, Philippines</li>
+                <li> Email : 12meann@gmail.com</li>
+                <li> LinkedIn</li>
+              </ul>
+            </div>
+           
+            
+      </div>
       
-      
-      
-      
-      
-
-    </div>
+    </section>
 
         
-        
+        <footer>
+          <div class="footer">
+           
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>||</li>
+              <li><a href="#contact">Work with Me</a></li>
+            </ul> 
+          
+              <p> Copyright &copy; 2019 Me-ann</p>
+          </div>
+        </footer>
     
 
 <!-- end of bg-img -->

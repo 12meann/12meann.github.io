@@ -1,15 +1,19 @@
 #projects {
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
-  margin: 50px;
+  margin: 60px;
+  // .item {
+  //   width: 275px;
+  // }
+
   img {
     width: 100%;
     border: 3px #fff solid;
 
     &:hover {
       opacity: 0.5;
-      border-color: $sec-color;
+      border-color: $hover-color;
       @include easeOut;
     }
   }
@@ -20,9 +24,14 @@
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  text-align: center;
   &:hover {
-    background: $sec-color;
-    color: $main-color;
+    color: $hover-color;
+    @include easeOut;
+    background: rgba(0, 0, 0, 0.65);
+    .fab {
+      color: $hover-color;
+    }
   }
 }
 
@@ -32,8 +41,49 @@
   color: #fff;
 }
 
-.btn-light {
-  @extend .btn;
-  background: $sec-color;
-  color: #333;
+.desc {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  h3 {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    color: $sec-color;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+#contact {
+  .c12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: "c1 c2";
+    margin-bottom: 100px;
+  }
+  h2 {
+    padding-bottom: 50px;
+  }
+  .c1 {
+    // float: left;
+    // width: 450px;
+    margin-left: 80px;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 2rem;
+
+    grid-area: "c1";
+  }
+  .c2 {
+    // float: right;
+    background: rgba(0, 0, 0, 0.55);
+    // width: 450px;
+    margin-right: 60px;
+    padding: 2rem;
+    grid-area: "c2";
+    border-left: $sec-color 5px solid;
+  }
 }
