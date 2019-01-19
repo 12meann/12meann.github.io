@@ -91,6 +91,53 @@ h2 {
     @include easeOut;
   }
 }
+// tooltip
+#landing ul li span {
+  position: absolute;
+  top: 80px;
+  left: 5.7%;
+  transform: translateX(-50%) translateY(-20px);
+  width: 140px;
+  height: 24px;
+  line-height: 24px;
+  background: #03a9f4;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  letter-spacing: 0;
+}
+#landing ul li:hover span {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+#landing ul li span:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #03a9f4;
+  z-index: -1;
+}
+#landing ul li span.tip {
+  position: absolute;
+  top: 80px;
+  left: 9.58%;
+  width: 150px;
+  transform: translateX(-50%) translateY(-20px);
+}
+#landing ul li:hover span.tip {
+  transform: translateX(-50%) translateY(0);
+}
+// end of tooltip
+
 .arrow-down span {
   font-size: $small-font;
   padding: 10px;
