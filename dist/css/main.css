@@ -122,6 +122,10 @@ strong {
       opacity: 0.5;
       border-color: aqua;
       transition: all 0.5s ease-out; }
+  #projects .item-1 img:hover {
+    content: url(../img/full_yelp.png); }
+  #projects .item-2 img:hover {
+    content: url(../img/full_score.png); }
 
 .btn, .btn-dark {
   display: block;
@@ -158,7 +162,7 @@ strong {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas: "c1 c2";
-  margin-bottom: 100px; }
+  margin-bottom: 70px; }
 
 #contact h2 {
   padding-bottom: 50px; }
@@ -175,6 +179,13 @@ strong {
   padding: 2rem;
   grid-area: "c2";
   border-left: yellow 5px solid; }
+  #contact .c2 ul li {
+    display: flex;
+    align-items: center; }
+    #contact .c2 ul li img {
+      padding: 10px; }
+    #contact .c2 ul li a:hover {
+      opacity: 0.5; }
 
 * {
   margin: 0;
@@ -189,7 +200,9 @@ body {
   position: relative;
   height: 100vh;
   font-family: "Source Sans Pro", sans-serif;
-  letter-spacing: 0.05rem; }
+  letter-spacing: 0.05rem;
+  overflow-x: hidden;
+  width: 100%; }
 
 a {
   text-decoration: none; }
@@ -218,10 +231,11 @@ h2 {
 
 #landing {
   margin-left: 60px;
-  letter-spacing: 0.08rem; }
+  letter-spacing: 0.08rem;
+  margin-bottom: 10px; }
 
 #name {
-  margin-top: 50vh;
+  margin-top: 40vh;
   font-size: 3.8rem;
   font-weight: 600; }
 
@@ -301,8 +315,7 @@ h2 {
 
 .container {
   background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 60px; }
+  width: 100%; }
 
 .sticky {
   background: rgba(0, 0, 0, 0.8);
@@ -313,12 +326,15 @@ h2 {
 
 #brand {
   float: left;
-  width: 50px;
-  height: 50px;
-  margin-top: 15px;
-  margin-left: 60px; }
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+  margin-left: 60px;
+  line-height: 50px; }
   #brand img {
-    width: 50px; }
+    width: 100%; }
+  #brand:hover {
+    opacity: 0.4; }
 
 .links {
   float: right;
@@ -333,8 +349,18 @@ h2 {
     .links li a:hover {
       color: aqua;
       border-bottom: 3px aqua solid;
-      padding-bottom: 12px;
+      padding-bottom: 22px;
       transition: all 0.5s ease-out; }
+
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  height: 60px;
+  display: none; }
+  .toggle i {
+    color: white;
+    font-size: 30px; }
 
 .footer {
   background: rgba(0, 0, 0, 0.4);
@@ -350,3 +376,41 @@ h2 {
       color: aqua; }
   .footer p {
     font-size: 0.8rem; }
+
+@media screen and (max-width: 768px) {
+  .toggle {
+    display: block; }
+  .container {
+    position: initial;
+    background: rgba(0, 0, 0, 0.5); }
+  #brand {
+    display: none; }
+  .links {
+    display: none;
+    float: none;
+    margin: 0 auto; }
+    .links li {
+      display: block;
+      text-align: center; }
+      .links li:hover {
+        background: aqua;
+        transition: all 0.5s ease-out; }
+        .links li:hover a {
+          color: #333;
+          border: 0; }
+  .active {
+    display: block; }
+  .sticky {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3; } }
+
+@media screen and (max-width: 500px) {
+  #landing {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center; }
+    #landing #name {
+      margin-top: 20vh; } }

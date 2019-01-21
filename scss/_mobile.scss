@@ -1,0 +1,64 @@
+// Widescreens
+@include mediaXl {
+}
+
+// Desktops & Laptops
+@include mediaLg {
+}
+// max-width: 768px
+@include mediaMd {
+  .toggle {
+    display: block;
+  }
+
+  .container {
+    position: initial;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #brand {
+    // float: none;
+    // display: block;
+    // margin: 0 auto;
+    display: none;
+  }
+  .links {
+    display: none;
+    float: none;
+    margin: 0 auto;
+    li {
+      display: block;
+      text-align: center;
+      &:hover {
+        background: $hover-color;
+
+        // padding-bottom: 22px;
+        @include easeOut;
+        a {
+          color: #333;
+          border: 0;
+        }
+      }
+    }
+  }
+  .active {
+    display: block;
+  }
+  .sticky {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+}
+@include mediaSm {
+  #landing {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    #name {
+      margin-top: 20vh;
+    }
+  }
+}

@@ -17,6 +17,18 @@
       @include easeOut;
     }
   }
+  .item-1 img:hover {
+    content: url(../img/full_yelp.png);
+  }
+  .item-2 img:hover {
+    content: url(../img/full_score.png);
+  }
+  // .item-3 img:hover {
+  //   // content: url(../img/full_yelp.png);
+  // }
+  // .item-4 img:hover {
+  //   // content: url(../img/full_yelp.png);
+  // }
 }
 
 .btn {
@@ -28,6 +40,7 @@
   &:hover {
     color: $hover-color;
     @include easeOut;
+
     background: rgba(0, 0, 0, 0.65);
     .fab {
       color: $hover-color;
@@ -63,14 +76,12 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas: "c1 c2";
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
   h2 {
     padding-bottom: 50px;
   }
   .c1 {
-    // float: left;
-    // width: 450px;
     margin-left: 80px;
     background: rgba(0, 0, 0, 0.55);
     padding: 2rem;
@@ -78,12 +89,24 @@
     grid-area: "c1";
   }
   .c2 {
-    // float: right;
     background: rgba(0, 0, 0, 0.55);
-    // width: 450px;
     margin-right: 60px;
     padding: 2rem;
     grid-area: "c2";
     border-left: $sec-color 5px solid;
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        img {
+          padding: 10px;
+        }
+        a {
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
   }
 }

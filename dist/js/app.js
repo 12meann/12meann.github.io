@@ -51,3 +51,11 @@ $(".links a").on("click", function(event) {
     );
   }
 });
+
+// hamburger menu
+
+$(document).ready(function() {
+  $(".hamburger").click(function() {
+    $(".links").toggleClass("active");
+  });
+});
