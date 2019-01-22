@@ -1,26 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 .bio-pic {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-column-gap: 40px;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
   grid-template-areas: "pic bio";
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 20px; }
+  margin: 20px 40px; }
   .bio-pic p {
     letter-spacing: 0.1rem;
     line-height: 30px; }
   .bio-pic .pic {
     grid-area: "pic"; }
     .bio-pic .pic img {
-      margin: 150px 80px 40px 70px;
+      display: block;
+      margin: 100px auto;
       opacity: 0.2; }
     .bio-pic .pic p {
-      padding: 20px; }
+      text-align: center; }
   .bio-pic .bio {
-    grid-area: "bio";
-    word-wrap: break-word;
-    margin-right: 50px; }
+    grid-area: "bio"; }
     .bio-pic .bio h4 {
       font-size: 2rem;
       padding-top: 100px; }
@@ -46,7 +43,7 @@ strong {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-template-areas: "first second third";
-  margin: 60px 80px 60px 60px; }
+  margin: 60px; }
   .work .first {
     grid-area: "first"; }
   .work .second {
@@ -61,7 +58,8 @@ strong {
     .work .job img {
       width: 150px;
       height: 150px;
-      margin: 0 100px; }
+      display: block;
+      margin: 0 auto; }
     .work .job .title {
       text-align: center;
       font-size: 1.15rem; }
@@ -142,7 +140,8 @@ strong {
 
 .btn-dark {
   background: rgba(0, 0, 0, 0.5);
-  color: #fff; }
+  color: #fff;
+  font-size: 1.15rem; }
 
 .desc {
   background: rgba(0, 0, 0, 0.2);
@@ -152,17 +151,19 @@ strong {
   border: 0; }
   .desc h3 {
     font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 0.15rem;
     color: yellow; }
   .desc p {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
 
 #contact .c12 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas: "c1 c2";
-  margin-bottom: 70px; }
+  margin-bottom: 120px;
+  font-size: 1.15rem; }
 
 #contact h2 {
   padding-bottom: 50px; }
@@ -179,13 +180,15 @@ strong {
   padding: 2rem;
   grid-area: "c2";
   border-left: yellow 5px solid; }
-  #contact .c2 ul li {
-    display: flex;
-    align-items: center; }
-    #contact .c2 ul li img {
-      padding: 10px; }
-    #contact .c2 ul li a:hover {
-      opacity: 0.5; }
+  #contact .c2 ul {
+    width: 50%; }
+    #contact .c2 ul li {
+      display: flex;
+      align-items: center; }
+      #contact .c2 ul li img {
+        padding: 10px; }
+      #contact .c2 ul li a:hover {
+        opacity: 0.5; }
 
 * {
   margin: 0;
@@ -377,6 +380,9 @@ h2 {
   .footer p {
     font-size: 0.8rem; }
 
+@media screen and (min-width: 1171px) {
+  overflow-x: hidden; }
+
 @media screen and (max-width: 768px) {
   .toggle {
     display: block; }
@@ -405,7 +411,33 @@ h2 {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3; } }
+    z-index: 3; }
+  .bio-pic {
+    grid-template-columns: 1fr;
+    grid-template-areas: initial;
+    padding-top: 100px; }
+  #skills .container-skills {
+    grid-template-columns: "1fr 1fr";
+    grid-template-areas: "c1 c2";
+    grid-gap: 50px; }
+  .work {
+    grid-template-columns: 1fr;
+    grid-template-areas: initial;
+    grid-gap: 50px; }
+    .work .job img {
+      display: block;
+      margin: 0 auto; }
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px; }
+  .desc {
+    background: rgba(0, 0, 0, 0.5); }
+  #contact .c12 {
+    grid-template-columns: 1fr;
+    grid-template-areas: initial; }
+    #contact .c12 .c1,
+    #contact .c12 .c2 {
+      margin: 40px; } }
 
 @media screen and (max-width: 500px) {
   #landing {
@@ -413,4 +445,31 @@ h2 {
     align-items: center;
     text-align: center; }
     #landing #name {
-      margin-top: 20vh; } }
+      margin-top: 20vh; }
+  .bio-pic {
+    padding: 0; }
+    .bio-pic .pic img {
+      margin: 80px auto 30px auto; }
+    .bio-pic .bio h4 {
+      font-size: 1.5rem;
+      padding-bottom: 20px; }
+  #skills .container-skills {
+    grid-template-columns: 1fr;
+    grid-template-areas: initial;
+    grid-gap: 50px; }
+  #projects {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding-top: 20px;
+    grid-gap: 50px; }
+  #contact .c12 {
+    grid-gap: 0; }
+    #contact .c12 .c1,
+    #contact .c12 .c2 {
+      border: 0;
+      margin: 0; }
+  .work-desc {
+    width: 100%;
+    padding: 20px; }
+  .work {
+    margin: 0; } }

@@ -1,11 +1,10 @@
 .bio-pic {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-column-gap: 40px;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
   grid-template-areas: "pic bio";
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 20px;
+  margin: 20px 40px;
+
   p {
     letter-spacing: 0.1rem;
     line-height: 30px;
@@ -13,17 +12,17 @@
   .pic {
     grid-area: "pic";
     img {
-      margin: 150px 80px 40px 70px;
+      display: block;
+      margin: 100px auto;
       opacity: 0.2;
     }
     p {
-      padding: 20px;
+      text-align: center;
     }
   }
   .bio {
     grid-area: "bio";
-    word-wrap: break-word;
-    margin-right: 50px;
+
     h4 {
       font-size: 2rem;
       padding-top: 100px;
@@ -55,7 +54,7 @@ strong {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-template-areas: "first second third";
-  margin: 60px 80px 60px 60px;
+  margin: 60px;
   .first {
     grid-area: "first";
   }
@@ -73,7 +72,8 @@ strong {
     img {
       width: 150px;
       height: 150px;
-      margin: 0 100px;
+      display: block;
+      margin: 0 auto;
     }
     .title {
       text-align: center;

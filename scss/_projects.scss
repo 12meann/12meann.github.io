@@ -3,9 +3,6 @@
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   margin: 60px;
-  // .item {
-  //   width: 275px;
-  // }
 
   img {
     width: 100%;
@@ -52,6 +49,7 @@
   @extend .btn;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
+  font-size: 1.15rem;
 }
 
 .desc {
@@ -62,11 +60,12 @@
   border: 0;
   h3 {
     font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 0.15rem;
     color: $sec-color;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -76,7 +75,8 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas: "c1 c2";
-    margin-bottom: 70px;
+    margin-bottom: 120px;
+    font-size: 1.15rem;
   }
   h2 {
     padding-bottom: 50px;
@@ -95,6 +95,7 @@
     grid-area: "c2";
     border-left: $sec-color 5px solid;
     ul {
+      width: 50%;
       li {
         display: flex;
         align-items: center;

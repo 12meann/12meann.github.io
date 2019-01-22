@@ -1,11 +1,21 @@
 // Widescreens
 @include mediaXl {
+  overflow-x: hidden;
+  // .work {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   grid-template-areas: "first second third";
+  //   grid-gap: 50px;
+  //   margin: 60px;
+  // }
 }
 
 // Desktops & Laptops
 @include mediaLg {
 }
-// max-width: 768px
+
+// Tablets & Small Laptops == max-width: 768px
+
 @include mediaMd {
   .toggle {
     display: block;
@@ -51,7 +61,46 @@
     width: 100%;
     z-index: 3;
   }
+  .bio-pic {
+    grid-template-columns: 1fr;
+    grid-template-areas: initial;
+    padding-top: 100px;
+  }
+  #skills .container-skills {
+    grid-template-columns: "1fr 1fr";
+    grid-template-areas: "c1 c2";
+    grid-gap: 50px;
+  }
+  .work {
+    grid-template-columns: 1fr;
+    grid-template-areas: initial;
+    grid-gap: 50px;
+    .job {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+  .desc {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #contact {
+    .c12 {
+      grid-template-columns: 1fr;
+      grid-template-areas: initial;
+      .c1,
+      .c2 {
+        margin: 40px;
+      }
+    }
+  }
 }
+
 @include mediaSm {
   #landing {
     margin: 0 auto;
@@ -60,5 +109,45 @@
     #name {
       margin-top: 20vh;
     }
+  }
+
+  .bio-pic {
+    padding: 0;
+    .pic {
+      img {
+        margin: 80px auto 30px auto;
+      }
+    }
+    .bio h4 {
+      font-size: 1.5rem;
+      padding-bottom: 20px;
+    }
+  }
+
+  #skills .container-skills {
+    grid-template-columns: 1fr;
+    grid-template-areas: initial;
+    grid-gap: 50px;
+  }
+  #projects {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding-top: 20px;
+    grid-gap: 50px;
+  }
+  #contact .c12 {
+    grid-gap: 0;
+    .c1,
+    .c2 {
+      border: 0;
+      margin: 0;
+    }
+  }
+  .work-desc {
+    width: 100%;
+    padding: 20px;
+  }
+  .work {
+    margin: 0;
   }
 }
