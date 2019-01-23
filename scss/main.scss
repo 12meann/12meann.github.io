@@ -57,10 +57,11 @@ h2 {
   margin-left: 60px;
   letter-spacing: 0.08rem;
   margin-bottom: 10px;
+  height: 100vh;
 }
 
 #name {
-  margin-top: 40vh;
+  margin-top: 50vh;
   font-size: 3.8rem;
   font-weight: 600;
 }
@@ -165,9 +166,8 @@ h2 {
 
 #brand {
   float: left;
-  width: 80px;
-  height: 80px;
-  margin-top: -10px;
+  width: 200px;
+  height: 60px;
   margin-left: 60px;
   line-height: 50px;
   img {
@@ -191,7 +191,7 @@ h2 {
     a:hover {
       color: $hover-color;
       border-bottom: 3px $hover-color solid;
-      padding-bottom: 22px;
+      padding-bottom: 17px;
       @include easeOut;
     }
   }

@@ -235,10 +235,11 @@ h2 {
 #landing {
   margin-left: 60px;
   letter-spacing: 0.08rem;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  height: 100vh; }
 
 #name {
-  margin-top: 40vh;
+  margin-top: 50vh;
   font-size: 3.8rem;
   font-weight: 600; }
 
@@ -329,9 +330,8 @@ h2 {
 
 #brand {
   float: left;
-  width: 80px;
-  height: 80px;
-  margin-top: -10px;
+  width: 200px;
+  height: 60px;
   margin-left: 60px;
   line-height: 50px; }
   #brand img {
@@ -352,7 +352,7 @@ h2 {
     .links li a:hover {
       color: aqua;
       border-bottom: 3px aqua solid;
-      padding-bottom: 22px;
+      padding-bottom: 17px;
       transition: all 0.5s ease-out; }
 
 .toggle {
@@ -380,8 +380,9 @@ h2 {
   .footer p {
     font-size: 0.8rem; }
 
-@media screen and (min-width: 1171px) {
-  overflow-x: hidden; }
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #contact .c12 .c2 ul {
+    width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .toggle {
@@ -445,7 +446,7 @@ h2 {
     align-items: center;
     text-align: center; }
     #landing #name {
-      margin-top: 20vh; }
+      margin-top: 35vh; }
   .bio-pic {
     padding: 0; }
     .bio-pic .pic img {
@@ -468,6 +469,9 @@ h2 {
     #contact .c12 .c2 {
       border: 0;
       margin: 0; }
+      #contact .c12 .c1 ul,
+      #contact .c12 .c2 ul {
+        width: 100%; }
   .work-desc {
     width: 100%;
     padding: 20px; }

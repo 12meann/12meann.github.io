@@ -1,17 +1,18 @@
 // Widescreens
 @include mediaXl {
-  overflow-x: hidden;
-  // .work {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr 1fr;
-  //   grid-template-areas: "first second third";
-  //   grid-gap: 50px;
-  //   margin: 60px;
-  // }
 }
 
 // Desktops & Laptops
 @include mediaLg {
+  #contact {
+    .c12 {
+      .c2 {
+        ul {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 // Tablets & Small Laptops == max-width: 768px
@@ -27,9 +28,6 @@
   }
 
   #brand {
-    // float: none;
-    // display: block;
-    // margin: 0 auto;
     display: none;
   }
   .links {
@@ -107,7 +105,7 @@
     align-items: center;
     text-align: center;
     #name {
-      margin-top: 20vh;
+      margin-top: 35vh;
     }
   }
 
@@ -141,6 +139,9 @@
     .c2 {
       border: 0;
       margin: 0;
+      ul {
+        width: 100%;
+      }
     }
   }
   .work-desc {
