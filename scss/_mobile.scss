@@ -13,6 +13,10 @@
       }
     }
   }
+  #projects {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
 }
 
 // Tablets & Small Laptops == max-width: 768px
@@ -23,8 +27,9 @@
   }
 
   .container {
-    position: initial;
-    background: rgba(0, 0, 0, 0.5);
+    // position: initial;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
   }
 
   #brand {
@@ -129,7 +134,7 @@
   }
   #projects {
     grid-template-columns: 1fr;
-    margin: 0;
+    margin: 20px;
     padding-top: 20px;
     grid-gap: 50px;
   }
@@ -149,6 +154,6 @@
     padding: 20px;
   }
   .work {
-    margin: 0;
+    margin: 20px;
   }
 }

@@ -4,7 +4,7 @@ window.onscroll = function() {
   myFunction();
 };
 
-var header = document.querySelector(".container");
+var header = document.querySelector(".header");
 var sticky = header.offsetTop;
 
 function myFunction() {
@@ -17,24 +17,24 @@ function myFunction() {
 
 // skills pie chart
 
-$(function() {
-  $(".chart").easyPieChart({
-    scaleColor: false, //not working
-    size: 180,
-    barColor: "#ffc107",
-    lineWidth: 15,
-    trackColor: "#373737",
-    lineCap: "circle",
-    animate: 2000
-  });
-});
+// $(function() {
+//   $(".chart").easyPieChart({
+//     scaleColor: false, //not working
+//     size: 180,
+//     barColor: "#ffc107",
+//     lineWidth: 15,
+//     trackColor: "#373737",
+//     lineCap: "circle",
+//     animate: 2000
+//   });
+// });
 
 function newFunction() {
   return "black";
 }
 
 // Smooth Scrolling
-$(".links a").on("click", function(event) {
+$(".links a, #scroll").on("click", function(event) {
   if (this.hash !== "") {
     event.preventDefault();
 

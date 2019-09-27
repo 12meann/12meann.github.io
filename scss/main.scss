@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 
 @import "config";
-@import "about";
-@import "skills";
 @import "projects";
+@import "about";
+// @import "skills";
 
 * {
   margin: 0;
@@ -44,13 +44,13 @@ h2 {
   padding-top: 75px;
   text-align: center;
 }
-.skills-p {
-  margin-bottom: 50px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: $small-font;
-  letter-spacing: 0.15rem;
-}
+// .skills-p {
+//   margin-bottom: 50px;
+//   text-align: center;
+//   color: rgba(255, 255, 255, 0.5);
+//   font-size: $small-font;
+//   letter-spacing: 0.15rem;
+// }
 
 // landing page
 #landing {
@@ -75,7 +75,8 @@ h2 {
     padding-right: 10px;
     a {
       font-size: 2.5rem;
-      .fab {
+      .fab,
+      .far {
         &:hover {
           color: $hover-color;
           @include easeOut;
@@ -84,7 +85,7 @@ h2 {
     }
   }
 }
-.fas {
+.fas.fa-angle-down {
   display: inline-block;
   color: red;
   margin-top: 10px;
@@ -96,50 +97,44 @@ h2 {
   }
 }
 // tooltip
-#landing ul li span {
-  position: absolute;
-  top: 80px;
-  left: 5.7%;
-  transform: translateX(-50%) translateY(-20px);
-  width: 140px;
-  height: 24px;
-  line-height: 24px;
-  background: #03a9f4;
-  color: #fff;
-  font-size: 0.9rem;
-  border-radius: 4px;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-  letter-spacing: 0;
+#landing ul li {
+  position: relative;
+  span {
+    position: absolute;
+    top: -65%;
+    left: 35%;
+    transform: translateX(-50%) translateY(-20px);
+    width: 140px;
+    height: 24px;
+    line-height: 24px;
+    background: rgb(3, 168, 244);
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    letter-spacing: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: rotate(45deg) translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background: #03a9f4;
+      z-index: -1;
+    }
+  }
+  &:hover span {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
 }
-#landing ul li:hover span {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-#landing ul li span:before {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: rotate(45deg) translateX(-50%);
-  width: 10px;
-  height: 10px;
-  background: #03a9f4;
-  z-index: -1;
-}
-#landing ul li span.tip {
-  position: absolute;
-  top: 80px;
-  left: 9.58%;
-  width: 150px;
-  transform: translateX(-50%) translateY(-20px);
-}
-#landing ul li:hover span.tip {
-  transform: translateX(-50%) translateY(0);
-}
+
 // end of tooltip
 
 .arrow-down span {
@@ -208,6 +203,10 @@ h2 {
   i {
     color: $main-color;
     font-size: 30px;
+    &:hover {
+      color: $hover-color;
+      cursor: pointer;
+    }
   }
 }
 

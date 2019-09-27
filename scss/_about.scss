@@ -73,18 +73,19 @@ strong {
       width: 150px;
       height: 150px;
       display: block;
-      margin: 0 auto;
+      margin: 20px auto;
     }
     .title {
       text-align: center;
       font-size: 1.15rem;
     }
     p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       text-align: center;
+      padding: 10px 0;
     }
     .description {
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
     hr {
       border: 0;
@@ -96,7 +97,7 @@ strong {
         rgba(255, 255, 0, 0)
       );
       width: 95%;
-      margin: 10px auto;
+      margin: 20px auto;
     }
   }
 }
