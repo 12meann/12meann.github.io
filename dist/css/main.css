@@ -106,18 +106,17 @@ hr {
 
 .bio-pic {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 20px;
-  grid-template-areas: "pic bio";
+  grid-template-columns: 1fr;
   margin: 20px 40px; }
   .bio-pic p {
     letter-spacing: 0.1rem;
-    line-height: 30px; }
+    line-height: 30px;
+    text-align: center; }
   .bio-pic .pic {
     grid-area: "pic"; }
     .bio-pic .pic img {
       display: block;
-      margin: 100px auto;
+      margin: 100px auto 20px auto;
       opacity: 0.2; }
     .bio-pic .pic p {
       text-align: center; }
@@ -125,12 +124,7 @@ hr {
     grid-area: "bio"; }
     .bio-pic .bio h4 {
       font-size: 2rem;
-      padding-top: 100px; }
-      .bio-pic .bio h4 span {
-        color: yellow; }
-    .bio-pic .bio p:last-child {
-      border-left: yellow 4px solid;
-      padding-left: 20px; }
+      text-align: center; }
 
 strong {
   font-weight: 600;
