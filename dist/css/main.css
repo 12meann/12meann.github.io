@@ -412,6 +412,13 @@ h2 {
   #projects {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px; }
+    #projects .item-1 img:hover,
+    #projects .item-2 img:hover,
+    #projects .item-3 img:hover,
+    #projects .item-4 img:hover,
+    #projects .item-5 img:hover,
+    #projects .item-6 img:hover {
+      content: ""; }
   .desc {
     background: rgba(0, 0, 0, 0.5); }
   #contact .c12 {
@@ -427,7 +434,7 @@ h2 {
     align-items: center;
     text-align: center; }
     #landing #name {
-      margin-top: 35vh; }
+      margin-top: 20vh; }
   .bio-pic {
     padding: 0;
     margin: 20px 40px; }
@@ -436,15 +443,18 @@ h2 {
     .bio-pic .bio h4 {
       font-size: 1.5rem;
       padding-bottom: 20px; }
-  #skills .container-skills {
-    grid-template-columns: 1fr;
-    grid-template-areas: initial;
-    grid-gap: 50px; }
   #projects {
     grid-template-columns: 1fr;
     margin: 20px;
     padding-top: 20px;
     grid-gap: 50px; }
+    #projects .item-1 img:hover,
+    #projects .item-2 img:hover,
+    #projects .item-3 img:hover,
+    #projects .item-4 img:hover,
+    #projects .item-5 img:hover,
+    #projects .item-6 img:hover {
+      content: ""; }
   #contact .c12 {
     grid-gap: 0; }
     #contact .c12 .c1,

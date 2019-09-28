@@ -91,6 +91,14 @@
   #projects {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
+    .item-1 img:hover,
+    .item-2 img:hover,
+    .item-3 img:hover,
+    .item-4 img:hover,
+    .item-5 img:hover,
+    .item-6 img:hover {
+      content: "";
+    }
   }
   .desc {
     background: rgba(0, 0, 0, 0.5);
@@ -113,7 +121,7 @@
     align-items: center;
     text-align: center;
     #name {
-      margin-top: 35vh;
+      margin-top: 20vh;
     }
   }
 
@@ -131,16 +139,19 @@
     }
   }
 
-  #skills .container-skills {
-    grid-template-columns: 1fr;
-    grid-template-areas: initial;
-    grid-gap: 50px;
-  }
   #projects {
     grid-template-columns: 1fr;
     margin: 20px;
     padding-top: 20px;
     grid-gap: 50px;
+    .item-1 img:hover,
+    .item-2 img:hover,
+    .item-3 img:hover,
+    .item-4 img:hover,
+    .item-5 img:hover,
+    .item-6 img:hover {
+      content: "";
+    }
   }
   #contact .c12 {
     grid-gap: 0;
