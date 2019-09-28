@@ -1,5 +1,8 @@
 // Widescreens
 @include mediaXl {
+  .bio-pic {
+    margin: 20px 350px;
+  }
 }
 
 // Desktops & Laptops
@@ -116,6 +119,7 @@
 
   .bio-pic {
     padding: 0;
+    margin: 20px 40px;
     .pic {
       img {
         margin: 80px auto 30px auto;

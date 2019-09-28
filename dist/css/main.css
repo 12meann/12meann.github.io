@@ -98,8 +98,10 @@ hr {
     align-items: center; }
     #contact .c2 ul li img {
       padding: 10px; }
-    #contact .c2 ul li a:hover {
-      opacity: 0.5; }
+    #contact .c2 ul li a {
+      color: aqua; }
+      #contact .c2 ul li a:hover {
+        opacity: 0.6; }
 
 .subheader {
   text-align: center; }
@@ -107,7 +109,7 @@ hr {
 .bio-pic {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 20px 40px; }
+  margin: 20px 150px; }
   .bio-pic p {
     letter-spacing: 0.1rem;
     line-height: 30px;
@@ -117,7 +119,7 @@ hr {
     .bio-pic .pic img {
       display: block;
       margin: 100px auto 20px auto;
-      opacity: 0.2; }
+      opacity: 0.8; }
     .bio-pic .pic p {
       text-align: center; }
   .bio-pic .bio {
@@ -352,6 +354,10 @@ h2 {
   .footer p {
     font-size: 0.8rem; }
 
+@media screen and (min-width: 1171px) {
+  .bio-pic {
+    margin: 20px 350px; } }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   #contact .c12 .c2 ul {
     width: 100%; }
@@ -423,7 +429,8 @@ h2 {
     #landing #name {
       margin-top: 35vh; }
   .bio-pic {
-    padding: 0; }
+    padding: 0;
+    margin: 20px 40px; }
     .bio-pic .pic img {
       margin: 80px auto 30px auto; }
     .bio-pic .bio h4 {
