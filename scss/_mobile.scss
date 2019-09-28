@@ -30,7 +30,6 @@
   }
 
   .container {
-    // position: initial;
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
   }
@@ -47,8 +46,6 @@
       text-align: center;
       &:hover {
         background: $hover-color;
-
-        // padding-bottom: 22px;
         @include easeOut;
         a {
           color: #333;
@@ -72,11 +69,7 @@
     grid-template-areas: initial;
     padding-top: 100px;
   }
-  #skills .container-skills {
-    grid-template-columns: "1fr 1fr";
-    grid-template-areas: "c1 c2";
-    grid-gap: 50px;
-  }
+
   .work {
     grid-template-columns: 1fr;
     grid-template-areas: initial;

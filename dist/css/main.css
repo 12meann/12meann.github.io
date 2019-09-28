@@ -398,10 +398,6 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-areas: initial;
     padding-top: 100px; }
-  #skills .container-skills {
-    grid-template-columns: "1fr 1fr";
-    grid-template-areas: "c1 c2";
-    grid-gap: 50px; }
   .work {
     grid-template-columns: 1fr;
     grid-template-areas: initial;
