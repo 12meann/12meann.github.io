@@ -101,8 +101,10 @@ hr {
     border-radius: 3px; }
     #contact .c2 form li:last-child, #contact .c2 form li:nth-child(4) {
       border: none;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
       text-align: center; }
+    #contact .c2 form li:nth-child(4) {
+      padding: 0; }
     #contact .c2 form li > label {
       background: rgba(0, 0, 0, 0.9);
       display: block;
