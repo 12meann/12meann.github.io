@@ -497,42 +497,67 @@
             </p>
             <br />
             <p class="contact">
-              <span> Let's start Working together </span>. Feel free to reach
+              <span> Let's start Working together</span>.
+              <br/>
+              Feel free to reach
               out.
-              <br />
-              <br />
-              Just send me a message to any of these platforms and I'll be right
-              back with you as soon as possible. Thanks.
+              <br />            
+              Just send me a message and I'll be right
+              back with you as soon as possible. 
+              <br/>
+              <br/>
+              Thanks.
             </p>
+            <br>
+            <div>
+                <ul class="icons">
+                    <li>
+                      <a href="https://www.linkedin.com/in/mary-anne-kristina-urgel" target="_blank"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                      <span class="tool">Connect @ LinkedIn</span>
+                    </li>
+                    <li>
+                      <a href="https://github.com/12meann" target="_blank">
+                        <i class="fab fa-github-square"></i
+                      ></a>
+                      <span class="tip">View codes @ Github</span>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/open?id=1DmYxU8Hz979IrJzYeDkZZIL0_OqQl4HA" target="_blank">
+                          <i class="far fa-address-card"></i></a>
+                        <span class="tip">View Resume</span>
+                      </li>
+                  </ul>
+            </div>
+            
           </div>
           <div class="c2">
-            <ul>
-              <li>
-                <img src="img/loc2.png" alt="location logo" /> Quezon City,
-                Philippines
-              </li>
-              <li>
-                <img src="img/mail2.png" alt="mail logo" /> 12meann@gmail.com
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/mary-anne-kristina-urgel"
-                  ><img src="img/in2.png" alt="linkedin logo"
-                /></a>
-                Connect with me at&nbsp;
-                <a href="https://www.linkedin.com/in/mary-anne-kristina-urgel"
-                  >LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/mary-anne-kristina-urgel"
-                  ><img src="img/github.png" alt="github logo"
-                /></a>
-                View my codes at&nbsp;
-                <a href="https://www.linkedin.com/in/mary-anne-kristina-urgel">
-                  GitHub</a
-                >
-              </li>
-            </ul>
+              <form name="contact" method="POST" data-netlify="true"> 
+                <ul>           
+                  <li>
+                      <label for="cxname">Name</label>
+                      <input id="cxname" type="text" name="name" maxlength="100" required>
+                      
+                  </li>
+                  <li>
+                      <label for="email">Email</label>
+                      <input id="email" type="email" name="email" maxlength="100" required>
+                      
+                  </li>
+                 
+                  <li>
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" onkeyup="adjust_textarea(this)" required placeholder="What kind of website do you want me to develop?"></textarea>
+                      
+                  </li>
+                  <li><div data-netlify-recaptcha="true"></div></li>
+                  <li>
+                      <input type="submit" value="Send" >
+                  </li>
+                  </ul>
+              </form>
+            
           </div>
         </div>
       </section>

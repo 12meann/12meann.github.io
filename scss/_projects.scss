@@ -93,6 +93,7 @@ hr {
     font-size: 1rem;
   }
 }
+//contact page
 
 #contact {
   .c12 {
@@ -119,17 +120,64 @@ hr {
     padding: 2rem;
     grid-area: "c2";
     border-left: $sec-color 5px solid;
-    ul {
+    form {
       li {
-        display: flex;
-        align-items: center;
-        img {
-          padding: 10px;
+        display: block;
+        padding: 9px;
+        border: 1px solid #dddddd;
+        margin-bottom: 30px;
+        border-radius: 3px;
+
+        &:last-child,
+        &:nth-child(4) {
+          border: none;
+          margin-bottom: 0px;
+          text-align: center;
         }
-        a {
-          color: $hover-color;
+        & > label {
+          background: rgba(0, 0, 0, 0.9);
+          display: block;
+          float: left;
+          margin-top: -19px;
+          padding: 2px 5px 2px 5px;
+          color: white;
+          font-size: 14px;
+          overflow: hidden;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          background: none;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          width: 100%;
+          display: block;
+          outline: none;
+          border: none;
+          height: 25px;
+          line-height: 25px;
+          font-size: 16px;
+          padding: 0;
+        }
+        textarea {
+          resize: none;
+          height: 70px;
+        }
+
+        input[type="submit"] {
+          background: $hover-color;
+          border: none;
+          padding: 10px 30px;
+          // border-bottom: 3px solid #5994ff;
+          border-radius: 5px;
+          color: black;
+          text-transform: uppercase;
           &:hover {
-            opacity: 0.6;
+            background: rgba(0, 255, 255, 0.7);
+            color: black;
+            cursor: pointer;
+            @include easeOut;
           }
         }
       }

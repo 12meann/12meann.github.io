@@ -15,20 +15,6 @@ function myFunction() {
   }
 }
 
-// skills pie chart
-
-// $(function() {
-//   $(".chart").easyPieChart({
-//     scaleColor: false, //not working
-//     size: 180,
-//     barColor: "#ffc107",
-//     lineWidth: 15,
-//     trackColor: "#373737",
-//     lineCap: "circle",
-//     animate: 2000
-//   });
-// });
-
 function newFunction() {
   return "black";
 }
@@ -71,3 +57,10 @@ $(document).on("click", function(e) {
     $(".links").toggleClass("active");
   }
 });
+
+//auto expand textarea
+function adjust_textarea(h) {
+  h.style.height = "70px";
+  h.style.height = h.scrollHeight + "px";
+  h.style.maxHeight = "200px";
+}
