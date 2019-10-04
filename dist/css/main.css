@@ -225,9 +225,6 @@ strong {
   box-sizing: border-box;
   color: white; }
 
-html {
-  overflow-x: hidden; }
-
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/laptop.jpg);
   background-attachment: fixed;
@@ -468,10 +465,7 @@ h2 {
     background: rgba(0, 0, 0, 0.5); }
   #contact .c12 {
     grid-template-columns: 1fr;
-    grid-template-areas: initial; }
-    #contact .c12 .c1,
-    #contact .c12 .c2 {
-      margin: 40px; } }
+    grid-template-areas: initial; } }
 
 @media screen and (max-width: 500px) {
   #landing {
@@ -506,9 +500,6 @@ h2 {
     #contact .c12 .c2 {
       border: 0;
       margin: 0; }
-      #contact .c12 .c1 ul,
-      #contact .c12 .c2 ul {
-        width: 100%; }
   .work-desc {
     width: 100%;
     padding: 20px; }

@@ -10,9 +10,7 @@
   box-sizing: border-box;
   color: $main-color;
 }
-html {
-  overflow-x: hidden;
-}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/laptop.jpg);

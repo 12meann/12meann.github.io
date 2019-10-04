@@ -100,10 +100,10 @@
     .c12 {
       grid-template-columns: 1fr;
       grid-template-areas: initial;
-      .c1,
-      .c2 {
-        margin: 40px;
-      }
+      // .c1,
+      // .c2 {
+      //   margin: 40px;
+      // }
     }
   }
 }
@@ -152,9 +152,9 @@
     .c2 {
       border: 0;
       margin: 0;
-      ul {
-        width: 100%;
-      }
+      // ul {
+      //   width: 100%;
+      // }
     }
   }
   .work-desc {

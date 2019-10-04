@@ -1,13 +1,13 @@
 // sticky header
 
 window.onscroll = function() {
-  myFunction();
+  stickyHeader();
 };
 
 var header = document.querySelector(".header");
 var sticky = header.offsetTop;
 
-function myFunction() {
+function stickyHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
@@ -15,9 +15,9 @@ function myFunction() {
   }
 }
 
-function newFunction() {
-  return "black";
-}
+// function newFunction() {
+//   return "black";
+// }
 
 // Smooth Scrolling
 $(".links a, #scroll").on("click", function(event) {
