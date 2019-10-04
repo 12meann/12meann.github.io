@@ -62,5 +62,5 @@ $(document).on("click", function(e) {
 function adjust_textarea(h) {
   h.style.height = "70px";
   h.style.height = h.scrollHeight + "px";
-  h.style.maxHeight = "200px";
+  h.style.maxHeight = "400px";
 }

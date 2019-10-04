@@ -101,6 +101,7 @@ hr {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas: "c1 c2";
+    margin: 0 60px 120px 60px;
     margin-bottom: 120px;
     font-size: 1.15rem;
   }
@@ -108,25 +109,36 @@ hr {
     padding-bottom: 50px;
   }
   .c1 {
-    margin-left: 80px;
+    // margin-left: 80px;
     background: rgba(0, 0, 0, 0.55);
-    padding: 2rem;
+    padding: 8%;
 
     grid-area: "c1";
   }
   .c2 {
     background: rgba(0, 0, 0, 0.55);
-    margin-right: 60px;
-    padding: 2rem;
+    // margin-right: 60px;
+    padding: 8%;
     grid-area: "c2";
     border-left: $sec-color 5px solid;
     form {
+      // ul {
+      //   max-width: 100%;
+      // }
       li {
         display: block;
         padding: 9px;
-        border: 1px solid #dddddd;
-        margin-bottom: 30px;
-        border-radius: 3px;
+        // border: 1px solid #dddddd;
+
+        // border-radius: 3px;
+
+        width: 300px;
+        // height: 50px;
+        margin: 10px 0px 10px 0;
+        border-width: 0 2px 2px 2px;
+        border-color: #dddddd;
+        border-style: solid;
+        position: relative;
 
         &:last-child,
         &:nth-child(4) {
@@ -137,15 +149,41 @@ hr {
         &:nth-child(4) {
           padding: 0;
         }
+
         & > label {
-          background: rgba(0, 0, 0, 0.9);
-          display: block;
-          float: left;
-          margin-top: -19px;
-          padding: 2px 5px 2px 5px;
-          color: white;
-          font-size: 14px;
-          overflow: hidden;
+          // background: rgba(0, 0, 0, 0.9);
+          // display: block;
+          // float: left;
+          // margin-top: -19px;
+          // padding: 2px 5px 2px 5px;
+          // color: white;
+          // font-size: 14px;
+          // overflow: hidden;
+
+          position: absolute;
+          display: flex;
+          top: -12px;
+          left: -2px;
+          align-items: center;
+
+          &:before,
+          &:after {
+            content: " ";
+            height: 2px;
+            background: white;
+            display: block;
+          }
+          &:before {
+            margin-right: 15px;
+            width: 20px;
+          }
+          &:after {
+            margin-left: 15px;
+            width: 202px;
+          }
+        }
+        &:nth-child(3) label:after {
+          width: 179px;
         }
         input[type="text"],
         input[type="email"],

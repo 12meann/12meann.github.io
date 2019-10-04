@@ -100,14 +100,10 @@
     .c12 {
       grid-template-columns: 1fr;
       grid-template-areas: initial;
-      // .c1,
-      // .c2 {
-      //   margin: 40px;
-      // }
     }
   }
 }
-
+//max-width: 500px
 @include mediaSm {
   #landing {
     margin: 0 auto;
@@ -148,6 +144,7 @@
   }
   #contact .c12 {
     grid-gap: 0;
+    margin: 0;
     .c1,
     .c2 {
       border: 0;
