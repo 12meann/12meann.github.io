@@ -225,6 +225,9 @@ strong {
   box-sizing: border-box;
   color: white; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/laptop.jpg);
   background-attachment: fixed;
