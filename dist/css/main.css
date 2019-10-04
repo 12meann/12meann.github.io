@@ -70,6 +70,9 @@ hr {
   .desc p {
     font-size: 1rem; }
 
+.subheader {
+  text-align: center; }
+
 #contact .c12 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -89,63 +92,61 @@ hr {
 
 #contact .c2 {
   background: rgba(0, 0, 0, 0.9);
-  padding: 2rem;
   grid-area: "c2";
   border-left: #ffcc00 5px solid; }
-  #contact .c2 form li {
-    display: block;
-    padding: 9px;
-    border: 1px solid #dddddd;
-    margin-bottom: 30px;
-    border-radius: 3px; }
-    #contact .c2 form li:last-child, #contact .c2 form li:nth-child(4) {
-      border: none;
-      margin-bottom: 20px;
-      text-align: center; }
-    #contact .c2 form li:nth-child(4) {
-      padding: 0; }
-    #contact .c2 form li > label {
-      background: rgba(0, 0, 0, 0.9);
+  #contact .c2 form ul {
+    padding: 30px 20px 10px; }
+    #contact .c2 form ul li {
       display: block;
-      float: left;
-      margin-top: -19px;
-      padding: 2px 5px 2px 5px;
-      color: white;
-      font-size: 14px;
-      overflow: hidden; }
-    #contact .c2 form li input[type="text"],
-    #contact .c2 form li input[type="email"],
-    #contact .c2 form li textarea {
-      background: none;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      width: 100%;
-      display: block;
-      outline: none;
-      border: none;
-      height: 25px;
-      line-height: 25px;
-      font-size: 16px;
-      padding: 0; }
-    #contact .c2 form li textarea {
-      resize: none;
-      height: 70px; }
-    #contact .c2 form li input[type="submit"] {
-      background: #00ffff;
-      border: none;
-      padding: 10px 30px;
-      border-radius: 5px;
-      color: black;
-      text-transform: uppercase; }
-      #contact .c2 form li input[type="submit"]:hover {
-        background: rgba(0, 255, 255, 0.7);
+      padding: 9px;
+      border: 1px solid #dddddd;
+      margin-bottom: 30px;
+      border-radius: 3px; }
+      #contact .c2 form ul li:last-child, #contact .c2 form ul li:nth-child(4) {
+        border: none;
+        margin-bottom: 20px;
+        text-align: center; }
+      #contact .c2 form ul li:nth-child(4) {
+        padding: 0; }
+      #contact .c2 form ul li > label {
+        background: rgba(0, 0, 0, 0.9);
+        display: block;
+        float: left;
+        margin-top: -19px;
+        padding: 2px 5px 2px 5px;
+        color: white;
+        font-size: 14px;
+        overflow: hidden; }
+      #contact .c2 form ul li input[type="text"],
+      #contact .c2 form ul li input[type="email"],
+      #contact .c2 form ul li textarea {
+        background: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        display: block;
+        outline: none;
+        border: none;
+        height: 25px;
+        line-height: 25px;
+        font-size: 16px;
+        padding: 0; }
+      #contact .c2 form ul li textarea {
+        resize: none;
+        height: 70px; }
+      #contact .c2 form ul li input[type="submit"] {
+        background: #00ffff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 5px;
         color: black;
-        cursor: pointer;
-        transition: all 0.5s ease-out; }
-
-.subheader {
-  text-align: center; }
+        text-transform: uppercase; }
+        #contact .c2 form ul li input[type="submit"]:hover {
+          background: rgba(0, 255, 255, 0.7);
+          color: black;
+          cursor: pointer;
+          transition: all 0.5s ease-out; }
 
 .bio-pic {
   display: grid;
@@ -167,7 +168,8 @@ hr {
     grid-area: "bio"; }
     .bio-pic .bio h4 {
       font-size: 2rem;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 20px; }
 
 strong {
   font-weight: 600;
@@ -285,10 +287,53 @@ h2 {
   color: red;
   margin-top: 10px;
   font-size: 2.5rem;
-  margin-bottom: 150px; }
+  margin-bottom: 150px;
+  position: relative;
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  -ms-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  animation: bounce 1s infinite; }
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 0; }
+  90% {
+    top: 10px; } }
+
+@-moz-keyframes bounce {
+  0% {
+    top: 0; }
+  90% {
+    top: 10px; } }
+
+@-ms-keyframes bounce {
+  .fas.fa-angle-down 0% {
+    top: 0; }
+  .fas.fa-angle-down 90% {
+    top: 10px; } }
+
+@-o-keyframes bounce {
+  0% {
+    top: 0; }
+  90% {
+    top: 10px; } }
+
+@keyframes bounce {
+  0% {
+    top: 0; }
+  90% {
+    top: 10px; } }
   .fas.fa-angle-down:hover {
     color: #00ffff;
     transition: all 0.5s ease-out; }
+
+.arrow-down span {
+  font-size: 0.8rem;
+  padding: 10px;
+  color: #ffffff;
+  /* Fallback for older browsers */
+  color: rgba(255, 255, 255, 0.5); }
 
 #landing ul li,
 #contact ul li {
@@ -327,13 +372,6 @@ h2 {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0); }
-
-.arrow-down span {
-  font-size: 0.8rem;
-  padding: 10px;
-  color: #ffffff;
-  /* Fallback for older browsers */
-  color: rgba(255, 255, 255, 0.5); }
 
 .container {
   background: rgba(0, 0, 0, 0.1);
@@ -472,7 +510,8 @@ h2 {
   #landing {
     margin: 0 auto;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 0 10px; }
     #landing #name {
       margin-top: 20vh; }
   .bio-pic {
