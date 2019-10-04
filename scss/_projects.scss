@@ -103,20 +103,21 @@ hr {
     grid-template-areas: "c1 c2";
     margin-bottom: 120px;
     font-size: 1.15rem;
+    margin: 0 60px 120px 60px;
   }
   h2 {
     padding-bottom: 50px;
   }
   .c1 {
-    margin-left: 80px;
-    background: rgba(0, 0, 0, 0.55);
+    // margin-left: 80px;
+    background: rgba(0, 0, 0, 0.9);
     padding: 2rem;
 
     grid-area: "c1";
   }
   .c2 {
-    background: rgba(0, 0, 0, 0.55);
-    margin-right: 60px;
+    background: rgba(0, 0, 0, 0.9);
+    // margin-right: 60px;
     padding: 2rem;
     grid-area: "c2";
     border-left: $sec-color 5px solid;
