@@ -11,18 +11,6 @@
       opacity: 0.5;
       border-color: #00ffff;
       transition: all 0.5s ease-out; }
-  #projects .item-1 img:hover {
-    content: url(../img/full_social.png); }
-  #projects .item-2 img:hover {
-    content: url(../img/full_appForm.png); }
-  #projects .item-3 img:hover {
-    content: url(../img/full_movieList.png); }
-  #projects .item-4 img:hover {
-    content: url(../img/full_portfolio.png); }
-  #projects .item-5 img:hover {
-    content: url(../img/full_score.png); }
-  #projects .item-6 img:hover {
-    content: url(../img/full_yelp.png); }
 
 .fa-ul {
   margin: 0.5rem 0.5rem 0.5rem 2rem; }
